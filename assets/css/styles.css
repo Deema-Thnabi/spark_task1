@@ -1,0 +1,92 @@
+/* Import CSS files */
+@import url("layout.css");
+@import url("typography.css");
+@import url("colors.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  text-align: center;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0.5rem 0;
+}
+
+.button:hover {
+  background: var(--primary-dark-color);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.subscribe-form label {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.subscribe-form input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+  width: 80%;
+  max-width: 400px;
+}
+
+.subscribe {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--secondary-color);
+}
+
+.footer {
+  padding: 1rem;
+  background: var(--primary-color);
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .navbar nav ul {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+  .blog-homepage {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-post-card {
+    width: 90%;
+  }
+}

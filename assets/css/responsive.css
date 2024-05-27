@@ -1,0 +1,16 @@
+/* Responsive design styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .author-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
