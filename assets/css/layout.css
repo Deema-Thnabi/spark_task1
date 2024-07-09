@@ -1,5 +1,12 @@
 /* Grid layout */
-.grid-container {
+.home-grid-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.post-grid-container {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
   min-height: 100vh;
@@ -111,6 +118,15 @@
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+figcaption {
+  background-color: var(--primary-color);
+  color: var(--light-background-color);
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  font-size: 12px;
 }
 
 .card-content {
